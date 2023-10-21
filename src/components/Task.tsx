@@ -1,7 +1,8 @@
 
 import styles from './Task.module.css'
 import { Trash } from '@phosphor-icons/react'
-import icon2 from '../assets/icon2.svg'
+import icon2 from '../assets/Icon2.svg'
+import clipboard from '../assets/Clipboard.svg'
 import {FormEvent, useState} from 'react';
 import { v4 as uuidv4 } from 'uuid';
 
@@ -99,6 +100,14 @@ export function Task(){
             </div>
 
             <div className={styles.taskList}>
+                {tasks.length === 0 && (
+                    <div className={styles.noTasksPanel}>
+                    <div className="line"></div>
+                    <img src = { clipboard }/>
+                    <span>Você ainda não tem tarefas cadastradas</span><br/>
+                    Crie tarefas e organize seus itens a fazer
+                </div>
+                )}
                 {tasks.map(task => {
                     return(
                         <div className={styles.taskPanel}>
@@ -126,6 +135,7 @@ export function Task(){
                         </div>
                     )
                 })}
+                
             </div>
 
         </div>

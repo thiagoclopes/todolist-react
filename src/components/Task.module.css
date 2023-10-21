@@ -94,6 +94,25 @@
     gap: 0.75rem;
 }
 
+.noTasksPanel img{
+    width: 3.5rem;
+    height: 3.5rem;
+    margin: 64px 340px 16px;
+    display: block;
+}
+.noTasksPanel span{
+    font-weight: bold;
+}
+.noTasksPanel{
+    border-top: 2px solid var(--gray-400);
+    border-radius: 8px;
+    width: 46rem;
+    height: 15.25rem;
+    font-family: 'Inter', sans-serif;
+    color: var(--gray-300);
+    text-align: center;
+}
+
 .taskPanel{
     padding-bottom: 1rem;
     padding-left: 1rem;
