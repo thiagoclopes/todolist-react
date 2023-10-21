@@ -1,0 +1,159 @@
+
+.task{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    width: 46rem;
+    margin: 0 auto;
+}
+
+.taskUploadContainer{
+    width: 46rem;
+    margin-top: -1.4375rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.taskUploadContainer button{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 1rem 1.8rem;
+    background: var(--blue-dark);
+    border-radius: 8px;
+    border: 0;
+    color: var(--gray-100);
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.taskUploadContainer button:hover{
+    background: var(--blue)
+}
+
+.taskUploadContainer textarea{
+    flex:1;
+    border-radius: 8px;
+    background: var(--gray-500);
+    border: 1px solid var(--gray-700);
+    resize:none;
+    color: var(--gray-300);
+    font-family: 'Inter', sans-serif;
+    font-weight: regular;
+    font-size: 1rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+
+.taskListContainer{
+    width: 46rem;
+    margin-top: 4rem;
+}
+.taskListContainer .header{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    line-height: auto;
+    font-size: 0.875rem;
+}
+
+.finishedTasks{
+    color: var(--purple);
+}
+
+.createdTasks{
+    color: var(--blue);
+}
+
+.finishedTasks span{
+    padding: 0px 8px;
+    width: 25px;
+    height: 19px;
+    font-size: 0.75rem;
+    color: var(--gray-200);
+    background: var(--gray-400);
+    border-radius: 10px;
+}
+
+.createdTasks span{
+    padding: 0px 8px;
+    width: 25px;
+    height: 19px;
+    font-size: 0.75rem;
+    color: var(--gray-200);
+    background: var(--gray-400);
+    border-radius: 8px;
+}
+
+.taskList{
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.taskPanel{
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    height: 4.5rem;
+    background: var(--gray-500);
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: regular;
+    font-size: 0.875rem;
+}
+.checkContentBox{
+    gap: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    line-height: 140%;
+
+}
+.checkBox input[type="checkbox"]{
+    appearance: none;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 1px solid var(--blue);
+    border-radius: 50%;
+    background-color: var(--gray-500);
+    display: flex;
+    cursor: pointer;
+}
+
+.checkBox input[type="checkbox"]:hover{
+    border: 1px solid var(--blue-dark);
+}
+.checkBox input[type="checkbox"]:checked{
+    background-color: var(--purple-dark);
+    background-image: url(../assets/Icon.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 17px;
+    border: 0;
+}
+
+.isCheckedDescription{
+    text-decoration: line-through;
+}
+
+.checkBox input[type="checkbox"]:checked:hover{
+    border: 1px solid var(--gray-100);
+}
+.trash{
+    background: transparent;
+    color: var(--gray-300);
+    border: 0;
+    padding-right: 1rem;
+    cursor: pointer;
+}
+
+.trash:hover{
+    color: var(--danger);
+    
+}
