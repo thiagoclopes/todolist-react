@@ -97,7 +97,7 @@
 .noTasksPanel img{
     width: 3.5rem;
     height: 3.5rem;
-    margin: 64px 340px 16px;
+    margin: 64px auto 16px;
     display: block;
 }
 .noTasksPanel span{
