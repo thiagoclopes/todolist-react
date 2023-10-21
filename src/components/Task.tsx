@@ -1,7 +1,7 @@
 
 import styles from './Task.module.css'
 import { Trash } from '@phosphor-icons/react'
-import icon2 from '../assets/icon2.svg'
+import icon2 from '../assets/Icon2.svg'
 import {FormEvent, useState} from 'react';
 import { v4 as uuidv4 } from 'uuid';
 
