@@ -95,7 +95,7 @@ export function Task(){
                     Tarefas criadas <span>{TasksCount}</span>
                 </div>
                 <div className={ styles.finishedTasks }>
-                    Concluidas <span>{CheckedTasksCount}</span>
+                    Concluidas <span>{CheckedTasksCount} de {TasksCount}</span>
                 </div>
             </div>
 
